@@ -8,20 +8,12 @@ const AddTodo = () => {
     description: "",
     isDone: false
   };
-<<<<<<< Updated upstream
   const [todo, setTodo] = useState(initialTodoState);
-=======
-  const [todo, setTutorial] = useState(initialTodoState);
->>>>>>> Stashed changes
   const [submitted, setSubmitted] = useState(false);
 
   const handleInputChange = event => {
     const { name, value } = event.target;
-<<<<<<< Updated upstream
     setTodo({ ...todo, [name]: value });
-=======
-    setTutorial({ ...todo, [name]: value });
->>>>>>> Stashed changes
   };
 
   const saveTodo = () => {
@@ -31,11 +23,7 @@ const AddTodo = () => {
 
     create(data)
       .then(response => {
-<<<<<<< Updated upstream
         setTodo({
-=======
-        setTutorial({
->>>>>>> Stashed changes
           id: response.data.id,
           title: response.data.title,
           description:response.data.description,
@@ -50,11 +38,7 @@ const AddTodo = () => {
   };
 
   const newTodo = () => {
-<<<<<<< Updated upstream
     setTodo(initialTodoState);
-=======
-    setTutorial(initialTodoState);
->>>>>>> Stashed changes
     setSubmitted(false);
   };
 
@@ -104,8 +88,4 @@ const AddTodo = () => {
 );
 };
 
-<<<<<<< Updated upstream
 export default AddTodo;
-=======
-export default AddTodo;
->>>>>>> Stashed changes
