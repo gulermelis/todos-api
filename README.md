@@ -1,5 +1,5 @@
 
-# Todo Api with React.js and axios
+# Todo App using React.js and axios
 
 ## Model
 
